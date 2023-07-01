@@ -10,6 +10,21 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Be Vietnam Pro', sans-serif;
+    position: relative;
+    overflow: hidden;
+    background-color: hsl(13, 92%, 90%);
+}
+
+.bg-desktop {
+    background-color: #ffc2b3;
+    height: 100vh;
+    width: 450px;
+    position: absolute;
+    top: -250px;
+    right: 150px;
+    transform: rotate(38deg);
+    border-bottom-left-radius: 230px;
+    border-bottom-right-radius: 230px;
 }
 
 header {
@@ -73,7 +88,6 @@ nav {
     width: 170px;
 }
 .nav-btn:hover {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     cursor: pointer;
 }
 
@@ -89,6 +103,39 @@ nav {
 
 .close-hamburg {
     display: none;
+}
+
+/* MAIN CONTENT SECTION */
+#main {
+    display: flex;
+    justify-content: space-between;
+    /* border: 3px solid red; */
+    width: 100%;
+    gap: 200px;
+    padding: 2%  10%;
+    z-index: 14;
+}
+.main-content-text {
+    margin: 20px 0;
+    width: 500px;
+}
+
+.main-header {
+    font-size: 50px;
+    margin-bottom: 13px;
+    margin-top: 60px;
+}
+
+.main-text{
+    font-size: 22px;
+}
+
+.main-image {
+    width: 750px;
+    margin: 20px 0;
+}
+.main-image img{
+    width: 100%;
 }
 
 
