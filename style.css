@@ -169,6 +169,7 @@ h2 {
     margin-bottom: 35px;
 }
 h3 {
+    color: #474343;
     font-size: 22px;
     margin-bottom: 12px;  
 }
@@ -232,9 +233,9 @@ h3 {
 }
 
 .testimonial-card {
-    background-color: #f8f6f5;
+    background-color: #fdfafa;
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     padding: 60px 40px;
     position: relative;
     width: 540px;
@@ -251,11 +252,13 @@ h3 {
 }
 
 .testimonial-names {
+    color: #474343;
     font-size: 18px;
     font-weight: 700;
     margin: 20px 0;
 }
 .testimonials-text {
+    color: #b4afaf;
     line-height: 25px;
 }
 
