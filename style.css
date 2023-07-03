@@ -151,13 +151,12 @@ nav {
     background-color: white;
     display: flex;
     justify-content: space-between;
+    height: 75vh;
     width: 100%;
     gap: 200px;
     padding: 4%  10%;
-}
-
-.one {
-
+    position: relative;
+    overflow: hidden;
 }
 
 .about-service {
@@ -203,6 +202,62 @@ h3 {
     width: 70px;
 }
 
+.bg-left {
+    background-color: #ffc2b3;
+    height: 55vh;
+    width: 450px;
+    position: absolute;
+    top: 1280px;
+    left: -180px;
+    transform: rotate(55deg);
+    border-top-left-radius: 230px;
+    border-top-right-radius: 230px; 
+    z-index: 15;
+}
+
+/* TESTIMONIALS SECTION */
+#testimonials-section {
+    background-color: white;   
+    text-align: center;
+    padding: 2%;
+    position: relative;
+    width: 100%;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+
+.testimonial-card {
+    background-color: #f8f6f5;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 60px 40px;
+    position: relative;
+    width: 540px;
+    margin: 20px 0;
+}
+
+.testimonial-card img{
+    border: 2px solid #e7dad7;
+    border-radius: 50%;
+    position: absolute;
+    top: -20px;
+    left: 220px;
+    width: 70px;
+}
+
+.testimonial-names {
+    font-size: 18px;
+    font-weight: 700;
+    margin: 20px 0;
+}
+.testimonials-text {
+    line-height: 25px;
+}
 
 @media screen and (max-width: 1593px) {
     body{
