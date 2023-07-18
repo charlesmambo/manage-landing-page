@@ -2,31 +2,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
 }
 
 body {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    font-family: 'Be Vietnam Pro', sans-serif;
-    position: relative;
+    align-items: center; */
+    width: 100%;
     background-color: hsl(13, 100%, 91%);
-    /* overflow: hidden; */
+    border: 2px solid red;
+    box-sizing: border-box;
 }
-
-/* .bg-desktop {
-    background-color: #ffc2b3;
-    height: 100vh;
-    width: 450px;
-    position: absolute;
-    top: -150px;
-    right: 150px;
-    transform: rotate(38deg);
-    border-bottom-left-radius: 230px;
-    border-bottom-right-radius: 230px;
-    z-index: -1;
-} */
 
 header {
     padding: 2%  8%;
@@ -40,6 +28,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     gap: 50px;
+    position: relative;
 }
 
 .nav-content {
@@ -109,7 +98,6 @@ nav {
 #main {
     display: flex;
     justify-content: space-between;
-    /* border: 3px solid red; */
     width: 100%;
     gap: 200px;
     padding: 2%  10%;
@@ -390,18 +378,24 @@ input {
         gap: 35px;
     }
 
-    .nav-btn-container {
+    .nav-button {
         display: none;
+    }
+
+    .main-header {
+        font-size: 40px;
+        margin-bottom: 13px;
+        margin-top: 0px;
+    }
+
+    .main-text{
+        font-size: 18px;
     }
 
 }
 
 
 @media screen and (max-width: 1089px) {
-    body{
-        background-color: powderblue;
-    }
-
     .nav-main-menu {
         display: none;
     }
@@ -409,6 +403,51 @@ input {
     .open-hamburg {
         display: block;
     }
+
+    .main-header {
+        font-size: 35px;
+        margin-bottom: 13px;
+        margin-top: 0px;
+    }
+
+    .main-text{
+        font-size: 18px;
+    }
+
+
+    .hamburg {
+        position: absolute;
+        top: 2px;
+    }
     
+}
+
+@media screen and (max-width: 1000px) {
+    #main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+        width: 100%;
+        gap: 50px;
+        padding: 4%  10%;
+        z-index: 14;
+        overflow: hidden;
+    }
+    
+    .main-content-text {
+        margin: 20px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .main-image {
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+    
+    .main-btn {
+        margin-top: 20px;
+    }
 }
 
