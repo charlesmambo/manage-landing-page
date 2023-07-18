@@ -251,8 +251,9 @@ h3 {
     position: relative;
     height: 500px;
     width: 100%;
-    box-sizing: border-box;
-    position: relative;
+    /* box-sizing: border-box;
+    position: relative; */
+    border: 1px solid #242d52;
 }
 
 .news-sub-container {
@@ -261,6 +262,7 @@ h3 {
     justify-content: space-between;
     align-items: center;
     margin-top: 100px;
+    border: 4px solid red;
 }
 
 
@@ -529,24 +531,31 @@ input {
     .main-btn {
         margin-top: 20px;
     }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 20px;
+       padding-top: 50px;
+    }
+
+    .social-icons {
+        margin-top: 50px;
+    }
+
+    input {
+        margin-bottom: 20px;
+        width: 100%;
+    } 
+
+    .footer-form {
+        width: 100%;
+    }
+
+    .footer-btn {
+        margin: 5px 0 20px 0;
+        width: 80px;
+    }
 }
-
-
-/* @media screen and (max-width: 767px) {
-    .testimonial-card {
-        width: 75%;
-        min-width: 300px;
-        margin: 15px 0;
-    }
-    .testimonial-card img{
-        border: 2px solid #e7dad7;
-        border-radius: 50%;
-        position: absolute;
-        top: -20px;
-        left: 150px;
-        width: 70px;
-    }
-} */
 
 @media screen and (max-width: 567px) {
     .num {
@@ -558,17 +567,20 @@ input {
         height: 40px;
         width: 100%;
     }
-
-    /* .content h3 {
-        padding: 8px 30px;
-        background-color: rgb(243, 96, 60) 
-    } */
-
     .service-content {
         display: flex;
         flex-direction: column;
         gap: 20px;
         margin-bottom: 40px;
+    }
+
+    .news-sub-container {
+        flex-direction: column;
+
+    }
+
+    .social-icons {
+        margin-top: 40px;
     }
  }
 
