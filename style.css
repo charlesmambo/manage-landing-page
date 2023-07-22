@@ -53,7 +53,7 @@ nav {
 }
 
 .nav-links:hover {
-    color:  hsl(227, 12%, 61%);
+    color:  rgb(243, 96, 60);
     font-weight: 700;
     text-decoration: none;
 }
@@ -81,14 +81,40 @@ nav {
     right: 24px;
 }
 
+.hamburg:hover{
+   cursor: pointer;
+}
+
 .open-hamburg {
+    display: none;
+}
+.open-hamburg img.hide {
     display: none;
 }
 
 .close-hamburg {
     display: none;
 }
+.close-hamburg img:hide{
+    display: none;
+}
+.close-hamburg.show-close {
+    display: block;
+}
 
+.popup-menu {
+    display: none;
+}
+
+.popup-menu.show {
+    display: block;
+}
+
+.pop-list{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
 /* MAIN CONTENT SECTION */
 #main {
     display: flex;
@@ -144,7 +170,7 @@ h2 {
 }
 
 h3 {
-    color: #474343;
+    color: rgb(71, 67, 67);
     font-size: 22px;
     margin-bottom: 12px;  
 }
@@ -153,11 +179,11 @@ h3 {
     font-size: 18px;
     padding-right: 80px;
     margin-top: 6px;
-    color: #b4afaf;
+    color: rgb(71, 67, 67);
 }
 
 .texttwo {
-    color: #b4afaf;
+    color: rgb(71, 67, 67);
     font-size: 18px;
     padding-right: 80px;
 }
@@ -212,7 +238,7 @@ h3 {
 }
 
 .testimonial-card {
-    background-color: #fdfafa;
+    background-color: rgb(253, 250, 250);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
     padding: 60px 40px;
@@ -223,7 +249,7 @@ h3 {
 }
 
 .testimonial-card img{
-    border: 2px solid #e7dad7;
+    border: 2px solid rgb(231, 218, 215);
     border-radius: 50%;
     position: absolute;
     top: -20px;
@@ -232,13 +258,13 @@ h3 {
 }
 
 .testimonial-names {
-    color: #474343;
+    color: rgb(71, 67, 67);
     font-size: 18px;
     font-weight: 700;
     margin: 20px 0;
 }
 .testimonials-text {
-    color: #b4afaf;
+    color: rgb(128, 126, 126);
     line-height: 25px;
 }
 
@@ -247,13 +273,11 @@ h3 {
 }
 
 #news-letter {
-    background-color: #242d52;
+    background-color: rgb(36, 45, 82);
     position: relative;
     height: 500px;
     width: 100%;
-    /* box-sizing: border-box;
-    position: relative; */
-    border: 1px solid #242d52;
+    border: 1px solid rgb(36, 45, 82);
 }
 
 .news-sub-container {
@@ -266,13 +290,13 @@ h3 {
 
 
 .news-letter-header {
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 30px;
     margin-top: 50px;
 }
 
 .news-btn {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     color: #f3603c;
 }
 
@@ -284,11 +308,14 @@ h3 {
 
 /* FOOTER SECTION */
 footer {
-    background-color: #fda58f; 
-    display: flex;
-    justify-content: space-between;
+    background-color: rgb(253, 165, 143);  
     padding: 4%  10%;
     width: 100%;
+}
+
+.footer-subcontainer {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-logo-img {
@@ -310,7 +337,7 @@ ul {
     padding: 10px 0;
 }
 .footer-list a{
-    color: #eeecec;
+    color: rgb(238, 236, 236);
     
     text-decoration: none;
 }
@@ -321,7 +348,7 @@ ul {
 input {
     border: none;
     border-radius: 25px;
-    color: #b4afaf;
+    color: rgb(180, 175, 175);
     font-family: inherit;
     outline: none;
     padding: 15px 20px;
@@ -333,7 +360,7 @@ input {
     background-color: hsl(12, 88%, 59%);
     border: none;
     border-radius: 25px;
-    color: hsl(0, 0%, 98%) ;
+    color: rgb(250, 250, 250) ;
     font-family: inherit;
     font-size: 15px;
     font-weight: 700;
@@ -343,8 +370,9 @@ input {
 }
 
 .footer-text {
-    color: #eeecec;
+    color: rgb(238, 236, 236);
     font-size: 15px;
+    text-align:right;
 }
 
 @media screen and (max-width: 1593px) {
@@ -462,11 +490,6 @@ input {
         width: 70px;
     }
 
-    /* .content h3 {
-        padding: 8px 30px;
-        background-color: rgb(243, 96, 60) 
-    } */
-
     .bg-left {
         display: none;
     }
@@ -531,12 +554,6 @@ input {
         margin-top: 20px;
     }
 
-    footer {
-        flex-wrap: wrap;
-        gap: 20px;
-       padding-top: 50px;
-    }
-
     .social-icons {
         margin-top: 50px;
     }
@@ -554,6 +571,11 @@ input {
         margin: 5px 0 20px 0;
         width: 80px;
     }
+
+    .footer-subcontainer {
+       flex-wrap: wrap;
+    }
+    
 }
 
 @media screen and (max-width: 567px) {

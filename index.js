@@ -85,3 +85,24 @@ window.addEventListener('resize', () => {
 // Initialize particles and start animation
 createParticles();
 updateParticles();
+
+
+const hamburgEl= document.getElementById('openHamburg');
+const openContainer = document.querySelector('.open-hamburg');
+const closeIconHamburg = document.getElementById('close-icon');
+const popupEl = document.getElementById('popup-menu');
+const closeContainer = document.getElementById('close-hamburg');
+
+
+hamburgEl.addEventListener('click', function(){
+  popupEl.classList.toggle('show')
+  closeContainer.classList.toggle('show-close');
+  hamburgEl.classList.add('hide')
+})
+
+closeIconHamburg.addEventListener('click', function(){
+  popupEl.classList.remove('show');
+  hamburgEl.classList.remove('hide');
+  closeContainer.classList.remove('show-close');
+  closeIconHamburg.classList.add('hide')
+})
