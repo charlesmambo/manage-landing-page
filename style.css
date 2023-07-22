@@ -19,17 +19,16 @@ header {
 }
 
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     gap: 50px;
     position: relative;
 }
-
-.nav-content {
+nav, .nav-content  {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.nav-content {
     gap: 240px;
 }
 
@@ -54,8 +53,6 @@ nav {
 
 .nav-links:hover {
     color:  rgb(243, 96, 60);
-    font-weight: 700;
-    text-decoration: none;
 }
 
 .nav-btn {
@@ -85,25 +82,18 @@ nav {
    cursor: pointer;
 }
 
-.open-hamburg {
-    display: none;
-}
-.open-hamburg img.hide {
+.open-hamburg,
+.close-hamburg,
+.popup-menu {
     display: none;
 }
 
-.close-hamburg {
-    display: none;
-}
-.close-hamburg img:hide{
+.close-hamburg img.hide, 
+.open-hamburg img.hide{
     display: none;
 }
 .close-hamburg.show-close {
     display: block;
-}
-
-.popup-menu {
-    display: none;
 }
 
 .popup-menu.show {
@@ -169,22 +159,24 @@ h2 {
     line-height: 45px;
 }
 
+h3, 
+.about-service-text,
+.texttwo {
+    color: rgb(71, 67, 67);  
+}
+
 h3 {
-    color: rgb(71, 67, 67);
     font-size: 22px;
     margin-bottom: 12px;  
 }
 
 .about-service-text {
-    font-size: 18px;
-    padding-right: 80px;
     margin-top: 6px;
-    color: rgb(71, 67, 67);
 }
 
+.about-service-text, 
 .texttwo {
-    color: rgb(71, 67, 67);
-    font-size: 18px;
+    font-size: 17px;
     padding-right: 80px;
 }
 
@@ -227,14 +219,18 @@ h3 {
     width: 100%;
 }
 
-.testimonials {
-    display: flex;
+.testimonials {  
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     gap: 100px;
     margin-top: 80px;
     position: relative;
+}
+
+.news-sub-container,
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .testimonial-card {
@@ -245,6 +241,10 @@ h3 {
     position: relative;
     width: 540px;
     min-width: 320px;
+}
+
+.testimonial-card,
+.testimonial-names {
     margin: 20px 0;
 }
 
@@ -261,7 +261,6 @@ h3 {
     color: rgb(71, 67, 67);
     font-size: 18px;
     font-weight: 700;
-    margin: 20px 0;
 }
 .testimonials-text {
     color: rgb(128, 126, 126);
@@ -346,32 +345,33 @@ ul {
 }
 
 input {
-    border: none;
-    border-radius: 25px;
-    color: rgb(180, 175, 175);
-    font-family: inherit;
+    color: rgb(180, 175, 175);   
     outline: none;
-    padding: 15px 20px;
     margin-bottom: 100px;
 } 
 
+input,
 .footer-btn {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: hsl(12, 88%, 59%);
     border: none;
     border-radius: 25px;
-    color: rgb(250, 250, 250) ;
     font-family: inherit;
-    font-size: 15px;
-    font-weight: 700;
-    letter-spacing: 3px;
-    margin-left: 10px;
-    padding: 15px 20px; 
+    padding: 15px 20px;
 }
 
+.footer-btn {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgb(242, 95, 58);   
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-left: 10px; 
+}
+.footer-btn,
 .footer-text {
     color: rgb(238, 236, 236);
     font-size: 15px;
+}
+
+.footer-text {
     text-align:right;
 }
 
@@ -530,14 +530,13 @@ input {
 
 @media screen and (max-width: 1000px) {
     #main {
-        display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column-reverse;
-        width: 100%;
         gap: 50px;
         padding: 4%  10%;
     }
+
     
     .main-content-text {
         margin: 20px 0;
